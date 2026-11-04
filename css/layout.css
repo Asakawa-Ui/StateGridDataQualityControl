@@ -1,0 +1,423 @@
+@charset "UTF-8";
+:root{--ink:#dcecfb;--muted:#89a9c2;--brand:#40e1da;--bg:#030d19;--line:#234b71;--cyan:#51f1e5;--azure:#599fff;--warning:#ffb24d;--offline:#91a6c1}
+#app{background:#020915}.ds-screen{background:radial-gradient(ellipse at 51% 33%,#0a2940 0%,#061426 50%,#030b17 100%)}.ds-screen:before{opacity:.1;background-size:35px 35px}.ds-screen:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:12;box-shadow:inset 0 0 100px #0008,inset 0 0 2px #4e96cf66}.ds-header{height:116px;grid-template-columns:1fr 700px 1fr;gap:12px;padding:0 32px;background:linear-gradient(180deg,#071c32 0%,#081b2fed 60%,#061427a0)}.ds-header:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent 0%,#1d5d8b 18%,#52dfec 40%,#7ff8ef 50%,#52dfec 60%,#1d5d8b 82%,transparent 100%);box-shadow:0 0 22px #45abda4d}.ds-header:after{bottom:12px;left:20px;right:20px;height:10px;background:linear-gradient(90deg,transparent,#398ac860 12%,#4ebfe3 29%,transparent 32%,transparent 68%,#4ebfe3 71%,#398ac860 88%,transparent);clip-path:polygon(0 65%,29% 65%,30% 0,32% 0,33% 65%,67% 65%,68% 0,70% 0,71% 65%,100% 65%,100% 80%,71% 80%,70% 16%,68% 16%,67% 80%,33% 80%,32% 16%,30% 16%,29% 80%,0 80%)}.ds-brand{height:106px;gap:15px;background:linear-gradient(180deg,#124064b0,#0b2c4caa 50%,#0c315100);clip-path:polygon(0 0,100% 0,94% 78%,86% 100%,14% 100%,6% 78%);border:0}.ds-brand:before{content:"";position:absolute;inset:2px 26px 0;border-top:1px solid #70e2ef77;pointer-events:none;box-shadow:inset 0 9px 30px #3b98c522}.ds-brand:after{height:5px;left:120px;right:120px;box-shadow:0 0 18px #45bfd37d;bottom:2px}.ds-brand h1{font-size:31px;letter-spacing:2px;color:#effcff;text-shadow:0 0 24px #5da7f344,0 3px 0 #092944}.ds-brand p{font-size:10px;letter-spacing:4.5px;color:#6d9fc0;margin-top:5px}.ds-logo{color:#8ffff0;width:51px;filter:drop-shadow(0 0 12px #2de4df66)}.ds-primary{padding-top:34px;gap:6px}.ds-primary button{font-size:18px;height:45px;color:#9fb7cb;background:linear-gradient(180deg,#143b5610,#143b5633);border-top-color:#244e6b55;border-bottom:1px solid #2f668255;letter-spacing:2px}.ds-primary button.active{color:#a5fff4;background:linear-gradient(180deg,#174e6933,#205770b0);border-top-color:#5cc4e955;border-bottom-color:#6ff1e4;box-shadow:inset 0 -12px 20px #23bec517}.ds-primary button.active:before{width:21%;left:39.5%;bottom:2px;box-shadow:0 0 10px #4ee8e9}.ds-context{height:43px;padding-top:4px}.ds-context-left strong{font-size:17px;letter-spacing:1.5px;color:#cbeafb}.ds-context-left span{font-size:11px;color:#6085a5}.ds-tools{gap:14px}.ds-tool-label{font-size:12px;color:#96b5cc}.ds-select{background:#0c2941;border:1px solid #295173;box-shadow:inset 0 0 8px #123751;color:#cfe5f3}.ds-workspace{top:169px;left:22px;right:25px;gap:17px;bottom:35px;grid-template-columns:94px 1fr}.ds-subnav{border-right:1px solid #2a548866;gap:13px;padding-top:13px;background:linear-gradient(90deg,#071526,#0a213555);padding-right:8px}.ds-subnav button{width:83px;height:83px;min-height:83px;color:#7197b7;font-size:12px;background:linear-gradient(145deg,#0c2945cc,#081b2fcc);border-color:#28507299;box-shadow:inset 0 0 20px #2f6b8e0a;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%)}.ds-subnav button .icon{width:25px;height:25px;stroke-width:1.45}.ds-subnav button.active{color:#9efbf1;background:linear-gradient(145deg,#184d66dd,#0a2c45dd);border-color:#4eacc4;box-shadow:inset 0 0 30px #277eb433,0 0 18px #2881b522}.ds-subnav button.active:before{height:39px;top:20px;box-shadow:0 0 13px #5cf4ec88;background:#7ffff0}.ds-subnav .ds-badge{background:#553c26;border-color:#ba894d;color:#ffd492}.ds-subnav-foot{color:#315778}.ds-card{background:linear-gradient(120deg,#0b2943ed,#071b32f0 72%);border:1px solid #27557b;box-shadow:0 8px 24px #01071377,inset 0 0 45px #1b4e7a17;border-radius:3px;isolation:isolate}.ds-card:before{width:24px;height:17px;border-color:#64bcdd;filter:drop-shadow(0 0 3px #3cb6d877);border-width:2px 0 0 2px}.ds-card:after{width:20px;height:14px;border-color:#4d91b8;border-width:0 2px 2px 0}.ds-card .panel-ornament{position:absolute;right:6px;top:5px;width:22px;height:22px;pointer-events:none;opacity:.5;z-index:-1;border-right:1px solid #6f9fbe;transform:skewY(30deg)}.ds-card-head{height:47px;padding:0 17px;background:linear-gradient(90deg,#184d71b3,#102e4b88 72%,#0c243c00);border-bottom-color:#387ba07a}.ds-card-head:before{content:"";position:absolute;top:0;bottom:0;left:0;width:4px;background:linear-gradient(#76e4eb,#2c83ba00)}.ds-card-head:after{width:74px;height:2px;left:17px;background:linear-gradient(90deg,#5deaf0,#366ea800);box-shadow:0 0 6px #47cbda55}.ds-card-head h3{font-size:16px;letter-spacing:1px;color:#d3efff;font-weight:500}.ds-card-head h3 .icon{width:16px;height:16px;color:#71cae3;filter:drop-shadow(0 0 3px #41b6ca33)}.ds-card-head .ds-card-extra{font-size:10px;color:#5b8eae}.ds-card-head .ds-more{color:#7aacca}.ds-card-body{padding:14px 18px;scrollbar-color:#305880 transparent}.ds-column{width:345px;gap:16px}.ds-column.left{left:0}.ds-column.right{right:0}.ds-kpis{left:366px;right:366px;top:11px;gap:13px}.ds-kpi{padding:11px 16px 10px;border:1px solid #285b7b;border-bottom:1px solid #3c8ba6;background:linear-gradient(125deg,#123d5db0,#0a273bb0);box-shadow:0 6px 16px #0003,inset 0 0 24px #338cba0b;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 13px,100% 100%,13px 100%,0 calc(100% - 13px))}.ds-kpi:before{height:2px;width:60px;top:0;left:0;background:linear-gradient(90deg,#60e9e1,#2a698b00)}.ds-kpi-label{font-size:12px;color:#a2c6dc;letter-spacing:1px}.ds-kpi-value{font-size:36px;color:#78fff1;line-height:1.35;letter-spacing:1.4px;text-shadow:0 0 18px #3ce6ce22}.ds-kpi-value.amber{color:#ffd088}.ds-kpi-value em{font-size:12px;color:#9ebed2}.ds-kpi-note{font-size:10px;color:#5b8ca8;margin-top:2px}.ds-scene{border-radius:4px;overflow:hidden;background:#051529}.ds-scene:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(90deg,#04111ee6 0%,#04111e00 23%,#04111e00 77%,#04111ee6 100%),linear-gradient(180deg,#06182bda,transparent 25%,transparent 66%,#041427e0 100%)}.ds-scene:before{display:none}.atlas-container{position:absolute;inset:0;z-index:0;background:#071629}.atlas-container .maplibregl-map{height:100%;width:100%;background:#081b2c}.atlas-map{position:absolute;inset:0}.atlas-map .maplibregl-canvas{outline:0}.maplibregl-control-container{font-family:inherit}.atlas-map .maplibregl-ctrl-attrib{font-size:9px;line-height:15px;color:#6d92b1;background:#06162bd9!important;border:1px solid #27435c;border-radius:2px!important}.atlas-map .maplibregl-ctrl-attrib a{color:#6e9cbb}.atlas-map .maplibregl-ctrl-bottom-right{right:372px;bottom:214px;opacity:.8;z-index:3}.atlas-map .maplibregl-ctrl-bottom-left{bottom:214px;left:368px}.atlas-map .maplibregl-ctrl-scale{background:#0d2536a0;color:#9db2c8;border-color:#547593;font-size:9px;line-height:15px}.atlas-map .maplibregl-ctrl-logo{display:none}.ds-map-label{left:373px;top:151px;z-index:3}.ds-map-label h2{font-size:18px;color:#b6e6f3;letter-spacing:2px}.ds-map-label p{font-size:9px;letter-spacing:2.3px;color:#497c9c}.ds-map-mode{right:373px;top:151px;background:#0b2943db;border-color:#34607a;z-index:4}.ds-map-mode button{font-size:11px;padding:7px 12px;border-color:#2f5370;color:#7199b8}.ds-map-mode button.active{color:#96fff0;background:#1b4d5d;box-shadow:inset 0 0 12px #3c9d9a22}.atlas-province-label{font-size:12px;color:#8cb8d3;font-weight:500;text-shadow:0 1px 3px #000,0 0 7px #000;white-space:nowrap;pointer-events:none;letter-spacing:1px}.atlas-province-label.selected{color:#d4fff5;font-weight:600}.atlas-core-marker{width:16px;height:16px;border:1px solid #c7fff5;border-radius:50%;background:#46ded2;box-shadow:0 0 0 5px #3ee0ce13,0 0 17px #46e1d5bb;cursor:pointer;position:relative;padding:0}.atlas-core-marker:before{content:"";position:absolute;inset:-7px;border:1px solid #5bdfd740;border-radius:50%}.atlas-core-marker.abnormal{background:#ffb350;border-color:#ffe0a2;box-shadow:0 0 0 5px #ffb35022,0 0 22px #ff9e44bb;transform-origin:center;border-radius:3px;rotate:45deg}.atlas-core-marker.abnormal:before{border-radius:4px;border-color:#ffc76c66;animation:atlas-pulse 2.8s ease-out infinite}.atlas-core-marker.offline{background:#7488a2;border-color:#b6c8db;border-radius:2px;box-shadow:0 0 0 4px #7897ab15,0 0 13px #778ba733}.atlas-core-marker.offline:before{border-radius:2px;border-color:#a3b9d144}.atlas-core-marker:after{content:"";width:4px;height:4px;border-radius:50%;position:absolute;left:5px;top:5px;background:#e6fffb}.atlas-core-marker.selected{outline:2px solid #e2fff8;outline-offset:10px}.atlas-core-marker:hover{filter:brightness(1.4)}@keyframes atlas-pulse{0%{opacity:.8;scale:.75}100%{opacity:0;scale:1.8}}.atlas-loading{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:12px;letter-spacing:2px;color:#7bafc8;z-index:1;display:flex;gap:10px;align-items:center}.atlas-loading:before{content:"";width:12px;height:12px;border:1px solid #296383;border-top-color:#83f7e5;border-radius:50%;animation:atlas-spin 1s linear infinite}@keyframes atlas-spin{to{transform:rotate(360deg)}}.atlas-map-credit{position:absolute;left:373px;bottom:194px;color:#487b9b;font-size:9px;letter-spacing:.4px;z-index:3;display:flex;align-items:center;gap:6px;pointer-events:none}.atlas-map-credit i{display:block;width:4px;height:4px;border-radius:50%;background:#3a9ca8}.atlas-state-filter{position:absolute;bottom:237px;left:373px;display:flex;gap:6px;align-items:center;z-index:4}.atlas-state-filter button{display:flex;align-items:center;gap:7px;font-size:11px;color:#81a7c0;border:1px solid #2c516b;background:#081f35e8;padding:7px 10px;min-height:32px;border-radius:3px}.atlas-state-filter button:hover{border-color:#4c8799}.atlas-state-filter button.active{background:#164657ee;border-color:#68cdb9;color:#b7f1e1}.atlas-state-filter button b{font:12px "Bahnschrift","Arial",sans-serif;color:#b6d7e4;font-weight:400}.atlas-symbol{display:inline-block;width:7px;height:7px;background:#5fe5cf;border:1px solid #c1ffec;border-radius:50%;flex:none;box-shadow:0 0 6px #6fffe233}.atlas-symbol.abnormal{background:#ffb958;border-color:#ffdb9d;border-radius:0;rotate:45deg;box-shadow:0 0 6px #e89b4933}.atlas-symbol.offline{background:#738aa5;border-color:#a2b4cd;border-radius:1px;box-shadow:none}.atlas-state-filter .atlas-reset-filter{padding:7px 9px}.ds-map-controls{right:373px;bottom:237px;z-index:4;gap:6px}.ds-map-controls button{width:32px;height:32px;background:#0a2339ee;border-color:#365b79;color:#9abdd4;box-shadow:0 3px 10px #0002}.ds-map-controls button:hover{background:#164658;border-color:#73cbb9}.ds-map-controls .atlas-settings{width:auto;font-size:10px;padding:0 9px;gap:5px;display:flex}.ds-map-station{top:39%;left:50%;width:262px;background:linear-gradient(130deg,#14415aee,#0a293eee);border-color:#5eabb8;box-shadow:0 18px 45px #0008,inset 0 0 24px #65c1d912;z-index:6;border-radius:4px;padding:15px 17px;backdrop-filter:blur(10px)}.ds-map-station strong{font-size:14px;color:#d8f4fa}.ds-map-station small{font-size:11px;color:#7ca5be}.ds-map-station .ds-pop-value{font-size:12px;border-color:#356479}.ds-map-station .ds-pop-value b{font-size:18px}.ds-map-station .ds-pop-actions{gap:15px}.ds-map-station button:not(.ds-pop-close){font-size:11px;color:#87edd7}.ds-bottom{left:366px;right:366px;bottom:13px;height:168px}.ds-bottom .ds-card{background:linear-gradient(180deg,#0d2945e8,#071c32f5);border-color:#2d5d83;box-shadow:0 -5px 35px #020b1844,inset 0 0 30px #2255771a}.ds-bottom .ds-card-head{height:38px}.ds-bottom .ds-card-head h3{font-size:13px}.ds-bottom .ds-card-body{padding:7px 16px}.ds-bottom .ds-trend{height:111px}.ds-trend .ds-trend-line{stroke:#63edda;filter:drop-shadow(0 0 3px #43cab066)}.ds-trend text{fill:#6c9cba;font-size:10px}.ds-trend .ds-gridline{stroke:#2b5376;opacity:.7}.ds-mini-stat b{font-size:25px;color:#dceffd}.ds-mini-stat b.cyan{color:#6affdf}.ds-mini-stat b.amber{color:#ffc26b}.ds-mini-stat b.red{color:#ff9b7f}.ds-mini-stat span{color:#729aba;font-size:11px}.ds-volume strong{font-size:34px;color:#77fae8;letter-spacing:1.5px}.ds-volume strong small{color:#92b7cd}.ds-data-line{color:#86adc7;font-size:12px}.ds-data-line b{color:#aadfe8;font-size:15px}.ds-progress{height:5px;background:#153351;border:1px solid #214361;box-shadow:inset 0 0 4px #0006}.ds-progress i{background:linear-gradient(90deg,#255d88,#42c6c2 70%,#88f8db);box-shadow:0 0 7px #45dfca66}.ds-progress.amber i{background:linear-gradient(90deg,#685848,#d7a458 70%,#ffd182);box-shadow:0 0 6px #f4b24e44}.ds-element-row{padding:7px 0;font-size:12px}.ds-element-row .ds-el-name{color:#9fbcd4}.ds-element-row .ds-progress{height:5px;border:0}.ds-element-row b{font-size:14px;color:#8be8d4;width:52px}.ds-element-row b.amber{color:#ffd28d}.ds-type-row{font-size:12px;padding:6px 0}.ds-type-row>span:first-child{color:#8bacc8}.ds-type-row>b{color:#cee6f5;font-size:14px}.ds-alert-item{padding:14px 0;border-bottom:1px solid #294b6b80;gap:10px;position:relative}.ds-alert-copy strong{font-size:13px;color:#bfd8e8;letter-spacing:.1px;line-height:1.65}.ds-alert-copy small{font-size:10px;color:#658bad;margin-top:4px}.ds-dot{width:5px;height:5px;background:#f8bc69;margin-top:9px}.ds-dot.red{background:#ff8c7b;box-shadow:0 0 9px #ec705966}.ds-alert-item:hover{background:linear-gradient(90deg,#22577133,transparent)}.ds-tag{font-size:9px;border-radius:2px;padding:2px 5px;border-color:#326677;background:#17475b66;color:#8dd0ce}.ds-tag.red{color:#ffc0a5;background:#7c40372e;border-color:#ac705766}.ds-tag.amber{color:#ffd088;background:#7d5c272e;border-color:#a27a4866}.ds-tag.blue{color:#9fc7f8;border-color:#507ab366;background:#244c7c2e}.ds-event-top b{font-size:38px;color:#ffd086;text-shadow:0 0 18px #d5a14a22}.ds-event-top b small{color:#91b2ca;font-size:11px}.ds-status-grid button{background:linear-gradient(140deg,#173f59,#0c2c45);border-color:#2e5d7e;border-top-color:#50829b;color:#7da6bf;box-shadow:inset 0 0 15px #194e6a33;font-size:11px}.ds-status-grid button b{font-size:24px;color:#c8ecfb}.ds-station-row{padding:11px 0;border-color:#274a6a77}.ds-station-row strong{font-size:13px;color:#b1d1e5}.ds-station-row small{color:#5783a8;font-size:10px}.ds-station-row b{font-size:16px;color:#88ddcd}.ds-station-row b.amber{color:#ffd088}.ds-footnote{color:#537f9f;font-size:9px}.ds-row-head{color:#4f7fa0}.ds-card-head .ds-more:hover{color:#99f0e2}.ds-footer{border-color:#27537255;color:#4e7695;font-size:10px}.ds-footer-state{color:#618a9f}.ds-footer .ds-footer-state i{background:#49d8bb;box-shadow:0 0 7px #45c5ae77}.ds-selected-heading{color:#c5e7f3}.ds-info-list b{color:#a9c9df}.ds-explain{border-color:#487e9f;background:#123b5555;color:#7fa3bf}.ds-explain.amber{color:#ceb98d;border-color:#b78d48;background:#624b2529}.ds-button{background:#154663;border-color:#3b7b93;color:#a0d9e6}.ds-button.primary{background:linear-gradient(100deg,#1b606d,#1b4e6e);border-color:#56b5bc;color:#c2fff0;box-shadow:inset 0 0 14px #4dc3c32a,0 3px 12px #0003}.ds-rule-item,.ds-info-list>div{border-color:#294e6e88}.ds-record{background:linear-gradient(120deg,#133b5644,#0e2a4244);border-color:#2d5878}.ds-record.selected{border-color:#60bbbf;background:linear-gradient(120deg,#1b516866,#12354c66);box-shadow:inset 0 0 20px #267a8a22}.ds-record-top strong{color:#b7d9eb}.ds-record p{color:#759dbc}.ds-report-preview{background:linear-gradient(125deg,#194663aa,#0e2d49);border-color:#3d6a8f}.ds-report-item{background:#12324d77;border-color:#295371}.ds-report-item.selected{background:linear-gradient(120deg,#20587077,#13364d77);border-color:#4eafaa}.ds-report-item strong{color:#badbe9}.ds-report-item small{color:#6c96b6}.ds-matrix .cell{background:#1b535755;border-color:#2c7c7866;color:#9bdfcb}.ds-matrix .cell.mid{color:#e0bf88;border-color:#8e744b66}.ds-matrix .cell.bad{color:#f5ad94;border-color:#a56e5d66}.ds-matrix .name{color:#94b4ce}.ds-matrix .heading{color:#6a8ea9}.ds-rank .name{color:#a4c4d9}.ds-rank b{color:#9ce8cf}.ds-mini-timeline .timeline-item strong{color:#a7c7da}.ds-mini-timeline .timeline-item small{color:#5d86a8}.ds-filter-stage{background:#102f49;border-color:#2d5473;color:#89acc8}.ds-filter-stage.active{background:linear-gradient(110deg,#22586888,#10334d88);border-color:#64b6b8;color:#aeecdd}.ds-filter-stage b{color:#c1dfed}.ds-rule-flow>div{background:#12344f;border-color:#356482;color:#b1d4e5}.ds-evidence-metrics>div{background:#11324d;border-color:#2d5778}.ds-evidence-metrics b{color:#ffd08b}.ds-evidence-metrics b.cyan{color:#82e9d7}.ds-evidence-metrics span{color:#658bad}
+.premium-network{display:flex;gap:16px;align-items:center;margin-top:1px}.premium-ring{position:relative;width:91px;height:91px;flex:none;background:conic-gradient(from -90deg,#72fae0 calc(var(--healthy)*1%),#ffbd5e 0 calc((var(--healthy) + var(--abnormal))*1%),#5b769b 0);border-radius:50%;box-shadow:0 0 25px #4dcbcb0c}.premium-ring:before{content:"";position:absolute;inset:6px;border-radius:50%;background:radial-gradient(circle,#0d304c,#0b253f);border:1px solid #224b6a}.premium-ring:after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px dashed #3d779944;rotate:-15deg}.premium-ring-inner{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column}.premium-ring-inner b{font:21px "Bahnschrift","Arial",sans-serif;color:#bcf9e9}.premium-ring-inner small{font-size:9px;color:#6d95af;margin-top:3px}.premium-network-legend{flex:1;display:flex;flex-direction:column;gap:9px}.premium-network-legend>div{display:flex;align-items:center;gap:7px;font-size:11px;color:#8eb3ce}.premium-network-legend b{margin-left:auto;font:18px "Bahnschrift","Arial",sans-serif;color:#c9e8f4;font-weight:400}.premium-network-legend .online b{color:#8af8d8}.premium-network-legend .abnormal b{color:#ffd08b}.premium-network-legend .offline b{color:#9db2cd}.premium-data-head{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#648dac;margin-bottom:14px}.premium-data-head strong{font:23px "Bahnschrift","Arial",sans-serif;font-weight:400;color:#c6edf7}.premium-data-head strong small{font:10px "Microsoft YaHei",sans-serif;color:#739db5;margin-left:4px}.premium-type-summary{font-size:11px;color:#81a9c2;display:flex;justify-content:space-between;margin-bottom:8px}.premium-type-summary b{font:14px "Bahnschrift","Arial",sans-serif;color:#d7d0b1;font-weight:400}.premium-panel-badge{display:inline-flex;padding:3px 7px;border-radius:2px;background:#1b4a6866;border:1px solid #3f6b8b44;color:#8cb6d1;font-size:9px;letter-spacing:1px}.atlas-filter-note{font-size:10px;color:#729bb7;position:absolute;top:195px;left:373px;z-index:3;letter-spacing:.5px;display:flex;align-items:center;gap:6px}.atlas-filter-note .icon{width:11px;height:11px}.atlas-config-info{font-size:12px;line-height:1.9;color:#88acc4}.atlas-popup-meta{display:flex;align-items:center;gap:7px;margin-top:9px;font-size:10px;color:#81a7c1}.atlas-popup-meta b{color:#d4e7f6;font-size:11px;font-weight:400}.atlas-popup-meta .atlas-symbol{width:6px;height:6px}.atlas-map .maplibregl-popup-content{background:#0c2943ef;border:1px solid #4f93b2;border-radius:4px;padding:12px 15px;box-shadow:0 15px 40px #0008;color:#bdd8e9;font:12px/1.7 "Microsoft YaHei",sans-serif}.atlas-map .maplibregl-popup-tip{border-top-color:#30617d}.atlas-map .maplibregl-popup-close-button{color:#89bad1;font-size:15px}.atlas-network-tooltip strong{display:block;color:#cff8ef;font-weight:500;font-size:13px}.atlas-network-tooltip p{margin:5px 0;color:#719aba;font-size:10px}.atlas-network-tooltip button{margin-top:5px;color:#90edd6;font-size:11px;padding:2px 0}.atlas-map .maplibregl-popup-anchor-top .maplibregl-popup-tip{border-bottom-color:#30617d}.atlas-map-error{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);background:#0e2b42ef;border:1px solid #405c78;color:#98bdd0;font-size:12px;padding:20px 26px;z-index:1;max-width:380px;text-align:center;line-height:1.9}.ds-column.left>.ds-card:first-child .ds-card-body{padding:16px 18px}.ds-column.left>.ds-card:nth-child(2) .ds-card-body{padding-top:9px;padding-bottom:9px}.ds-column.left>.ds-card:last-child .ds-card-body{padding-top:11px;padding-bottom:11px}.ds-column.left>.ds-card:nth-child(2) .ds-element-row{padding:6px 0}.ds-column.right>.ds-card:last-child .ds-station-row{padding:10px 0}.atlas-border-hud{position:absolute;inset:128px 356px 200px;pointer-events:none;z-index:2;border:1px solid #3a6e941c;clip-path:polygon(0 0,10% 0,10% 2px,90% 2px,90% 0,100% 0,100% 100%,90% 100%,90% calc(100% - 2px),10% calc(100% - 2px),10% 100%,0 100%)}.ds-card:hover{border-color:#386b91}.ds-empty-page{background:radial-gradient(ellipse,#0b2a4355,transparent 70%)}.ds-empty-page h2{color:#6d99ba}.ds-empty-page p{color:#4e718e}
+.atlas-core-marker.abnormal{rotate:none;background:none;border:0;box-shadow:none}.atlas-core-marker.abnormal:after{left:2px;top:2px;width:12px;height:12px;border-radius:2px;rotate:45deg;background:#ffba5a;border:1px solid #fff0b5;box-shadow:0 0 18px #ffb85faa}.atlas-core-marker.abnormal:before{rotate:45deg;border-color:#ffc66a88;border-radius:3px}.ds-card-body{padding-top:12px;padding-bottom:12px}.ds-column.right>.ds-card:first-child>.ds-card-body{padding-top:10px;padding-bottom:10px}.ds-column.left>.ds-card:nth-child(2) .ds-element-row{padding:5px 0}.ds-column.left>.ds-card:last-child .ds-type-row{padding:5px 0}.ds-column.right>.ds-card:last-child .ds-station-row{padding:9px 0}
+.atlas-core-marker{position:absolute;left:0;top:0}.atlas-core-marker.offline{width:9px;height:9px}.atlas-core-marker.offline:after{width:3px;height:3px;left:2px;top:2px}.atlas-core-marker.offline:before{inset:-4px}
+@media(prefers-reduced-motion:reduce){.atlas-core-marker.abnormal:before{animation:none}}
+
+.ds-column.right>.ds-card:first-child>.ds-card-body{padding-top:7px;padding-bottom:7px}.ds-column.right>.ds-card:nth-child(2) .ds-alert-item{padding-top:13px;padding-bottom:13px}
+
+/* 色板的四个彩色值来自参考作品；深色基底和状态回退为项目适配值。 */
+:root {
+  --pg-primary: #74d4fc;
+  --pg-secondary: #67b8fa;
+  --pg-teal: #4bccc1;
+  --pg-gold: #fead51;
+  --pg-bg: #050d12;
+  --pg-surface: #0d1a23;
+  --pg-surface-raised: #142631;
+  --pg-text: #dce8ef;
+  --pg-muted: #93aab9;
+  --pg-line: #30444f;
+  --pg-offline: #8396a8;
+  --pg-danger: #e78778;
+  --pg-font: "Source Han Sans CN", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  --pg-number-font: "DIN", "DIN Alternate", "Bahnschrift", "Arial", sans-serif;
+  --pg-space: 8px;
+}
+
+/* 参照站酷作品的色板、字体层级与轻量面板；布局按六统一业务适配。 */
+:root {
+  --ink:var(--pg-text); --muted:var(--pg-muted); --brand:var(--pg-primary);
+  --cyan:var(--pg-primary); --azure:var(--pg-secondary); --warning:var(--pg-gold);
+  --bg:var(--pg-bg); --line:var(--pg-line); --offline:var(--pg-offline);
+}
+body {font-family:var(--pg-font);background:var(--pg-bg)}
+#app {background:#03090e}
+.ds-screen {background:radial-gradient(ellipse at 52% 50%,#132732 0%,#08131b 52%,#040b10 100%)}
+.ds-screen:before {opacity:.035;background-size:72px 72px}
+.ds-screen:after {box-shadow:inset 0 0 90px #0006,inset 0 0 1px #8aa5b333}
+
+/* 顶部：中置品牌，双侧导航；细线替代厚发光边框。 */
+.ds-header {height:116px;padding:0 32px;grid-template-columns:1fr 700px 1fr;background:linear-gradient(180deg,#101e27f5,#08121ce8 75%,#08121c00)}
+.ds-header:before {height:1px;background:linear-gradient(90deg,transparent,#526b7e 25%,#b4cedc 50%,#526b7e 75%,transparent);box-shadow:none}
+.ds-header:after {height:1px;bottom:11px;left:30px;right:30px;clip-path:none;background:linear-gradient(90deg,#465562,transparent 31%,#74d4fc88 45%,#74d4fc88 55%,transparent 69%,#465562)}
+.ds-brand {height:102px;background:radial-gradient(ellipse at 50% 0%,#29445377,transparent 74%);clip-path:none}
+.ds-brand:before {inset:4px 64px 3px;border:0;border-bottom:1px solid #90adb65c;box-shadow:none;clip-path:polygon(0 0,100% 0,93% 100%,7% 100%)}
+.ds-brand:after {height:2px;bottom:3px;left:269px;right:269px;background:linear-gradient(90deg,transparent,#d2d1b0,transparent);box-shadow:0 0 8px #d6c39633}
+.ds-brand h1 {font-size:32px;letter-spacing:2px;font-weight:700;color:#e0edf5;text-shadow:0 2px 8px #0009}
+.ds-brand p {font-size:9px;letter-spacing:4px;color:#839aa9;margin-top:3px}
+.ds-logo {width:43px;color:#a2d5e8;filter:drop-shadow(0 0 5px #74d4fc33)}
+.ds-primary {gap:10px;padding-top:31px}
+.ds-primary button {height:46px;font-size:18px;color:#9caeba;background:linear-gradient(180deg,transparent,#1d33431f);border-top:0;border-bottom:1px solid #40536577;clip-path:none;letter-spacing:2px}
+.ds-primary button:hover {background:linear-gradient(180deg,transparent,#25445b55);color:#d6e8f0}
+.ds-primary button.active {color:#f5cd91;border-top:0;border-bottom:1px solid #d1aa70;background:linear-gradient(180deg,transparent,#c3954422);box-shadow:none}
+.ds-primary button.active:before {width:32px;height:2px;left:calc(50% - 16px);bottom:0;background:#f1bf7c;box-shadow:0 0 8px #f1bf7c44}
+.ds-context-left strong {color:#d2e3ec;font-size:17px}
+.ds-context-left span,.ds-snapshot {color:#839aaa}
+.ds-context-left>.icon {color:var(--pg-primary)}
+.ds-tool-label {color:#9cabb7}
+.ds-select {background:#12232e;border-color:#3a505f;color:#c9d9e4;box-shadow:none}
+.ds-tool-button {color:#a8c1ce;border-color:#405361;background:#14242d80}
+.ds-live {color:#9aafbb}.ds-live i {background:var(--pg-teal);box-shadow:0 0 6px #4bccc144}
+
+/* 二级导航：简洁按钮和金色选中标识。 */
+.ds-subnav {background:linear-gradient(90deg,#09121aee,#111f2855);border-color:#36465066;gap:13px}
+.ds-subnav button {clip-path:none;border:1px solid #33485477;border-radius:2px;background:linear-gradient(120deg,#1b2c3777,#101b2266);color:#8dabbf;box-shadow:none}
+.ds-subnav button .icon {color:#83adc8}
+.ds-subnav button.active {color:#f1d09b;background:linear-gradient(110deg,#3b352a88,#1e2b3388);border-color:#917858;box-shadow:inset 0 0 18px #c3954409}
+.ds-subnav button.active .icon {color:#e8c18b}
+.ds-subnav button.active:before {height:31px;top:25px;background:#f1bf7c;box-shadow:0 0 7px #f1bf7c44}
+.ds-subnav-foot {color:#5e788a;letter-spacing:1.5px}
+
+/* 低对比面板、分隔线和冰蓝标题。 */
+.ds-column {gap:16px}
+.ds-card,.ds-bottom .ds-card {border:1px solid #354b5650;border-top-color:#607c8d66;border-bottom-color:#29424c55;border-radius:2px;background:linear-gradient(110deg,#13232de8,#09151dee 85%);box-shadow:0 7px 20px #0003,inset 0 1px 0 #b8d4e40b}
+.ds-card:hover {border-color:#56718088}
+.ds-card:before,.ds-card:after,.ds-card .panel-ornament {display:none}
+.ds-card-head {height:47px;padding:0 17px;background:linear-gradient(90deg,#2a45552e,transparent);border-bottom:1px solid #3a536255}
+.ds-card-head:before {width:2px;height:17px;top:15px;bottom:auto;left:0;background:linear-gradient(#c0e7f4,#568aa5);box-shadow:0 0 6px #74d4fc33}
+.ds-card-head:after {height:1px;width:78px;left:17px;bottom:-1px;background:linear-gradient(90deg,#9ec9dc99,transparent);box-shadow:none}
+.ds-card-head h3 {font-size:17px;font-weight:500;letter-spacing:1px;color:#cfdfeb}
+.ds-card-head h3 .icon {color:#94c8df;filter:none;stroke-width:1.6}
+.ds-card-head .ds-card-extra {color:#8ca6b8;font-size:11px}
+.ds-card-head .ds-more {color:#91b5cb;font-size:11px}
+.ds-card-body {scrollbar-color:#536a78 transparent}
+.ds-kpis {top:11px;gap:14px}
+.ds-kpi {clip-path:none;border:1px solid #39525f77;border-bottom-color:#65899b99;background:linear-gradient(115deg,#1e3441d9,#0c1c27d9);box-shadow:0 6px 18px #0003;padding:12px 16px 10px}
+.ds-kpi:before {height:1px;width:65px;background:linear-gradient(90deg,#abd8ea,transparent)}
+.ds-kpi-label {color:#afc5d4;font-size:13px;font-weight:400;letter-spacing:.7px}
+.ds-kpi-value {font-family:var(--pg-number-font);font-weight:600;color:var(--pg-primary);font-size:36px;letter-spacing:1px;text-shadow:0 0 14px #74d4fc10}
+.ds-kpi-value.amber {color:var(--pg-gold)}
+.ds-kpi-value em {color:#9cabb7;font-size:12px;font-weight:400}
+.ds-kpi-note {color:#839eaf;font-size:11px}
+.ds-mini-stat b,.ds-data-line b,.ds-volume strong,.premium-data-head strong,.premium-network-legend b,.premium-ring-inner b,.ds-bottom-metrics b,.ds-event-top b {font-family:var(--pg-number-font);font-variant-numeric:tabular-nums}
+.ds-mini-stat b.cyan,.ds-volume strong,.ds-data-line b,.ds-bottom-metrics b {color:var(--pg-primary)}
+.ds-mini-stat b.amber,.ds-event-top b {color:var(--pg-gold);text-shadow:none}
+.ds-mini-stat b.red {color:var(--pg-danger)}
+.ds-mini-stat span,.ds-data-line,.ds-volume strong small {color:#9ab1c1}
+.ds-progress {height:4px;border:0;border-radius:0;background:#2b3c48;box-shadow:none}
+.ds-progress i {background:linear-gradient(90deg,#3f6f89,#74d4fc);box-shadow:0 0 5px #74d4fc22;border-radius:0}
+.ds-progress.amber i {background:linear-gradient(90deg,#77603d,#fead51);box-shadow:none}
+.ds-element-row .ds-el-name,.ds-type-row>span:first-child {color:#aec2d0}
+.ds-element-row b {color:#91c9e4;font-family:var(--pg-number-font)}
+.ds-element-row b.amber {color:#e8ba7d}
+.ds-type-row>b {color:#d1e0e9;font-family:var(--pg-number-font)}
+.ds-footnote,.ds-row-head {color:#7d96a8}
+
+/* 多层细环与状态图例。 */
+.premium-ring {background:conic-gradient(from -90deg,var(--pg-teal) calc(var(--healthy)*1%),var(--pg-gold) 0 calc((var(--healthy) + var(--abnormal))*1%),var(--pg-offline) 0);box-shadow:0 0 24px #74d4fc0c}
+.premium-ring:before {inset:5px;background:radial-gradient(circle,#203644,#0b1a23);border:1px solid #58717f66;box-shadow:inset 0 0 12px #74d4fc09}
+.premium-ring:after {inset:-8px;border:1px solid #90b9cf55;outline:1px dashed #59778c55;outline-offset:4px;rotate:0}
+.premium-ring-inner b {color:#bfdfed;font-size:22px}
+.premium-ring-inner small {font-size:10px;color:#93a9b8}
+.premium-network-legend>div {font-size:12px;color:#a5bbcb}
+.premium-network-legend .online b {color:var(--pg-teal)}
+.premium-network-legend .abnormal b {color:var(--pg-gold)}
+.premium-network-legend .offline b {color:#a6bacb}
+.premium-data-head {color:#95aebf;font-size:12px}
+.premium-data-head strong {color:#dce8ef;font-size:24px}
+.premium-data-head strong small {color:#98afbf;font-size:11px}
+
+/* 地图的纹理、区域和站点使用独立图层，外围渐隐让地图与面板融合。 */
+.ds-scene {background:#060f16}
+.ds-scene:after {background:linear-gradient(90deg,#050d12f2,transparent 24%,transparent 76%,#050d12f2),linear-gradient(180deg,#07131dea,transparent 25%,transparent 70%,#07111ce8)}
+.atlas-container,.atlas-container .maplibregl-map {background:#050e15}
+.atlas-border-hud {border-color:#809aa61a}
+.ds-map-label h2 {font-size:19px;font-weight:500;color:#c9e2ed;letter-spacing:2px}
+.ds-map-label p {color:#7a9aaa;font-size:9px;letter-spacing:2.1px}
+.atlas-filter-note {color:#8fa8b9;font-size:11px}
+.atlas-filter-note b {color:#bcd8e7;font-family:var(--pg-number-font)}
+.ds-map-mode {border-color:#50647299;background:#101e29df;border-radius:2px}
+.ds-map-mode button {color:#a0b7c5;border-color:#50647266}
+.ds-map-mode button.active {background:linear-gradient(#4e443266,#39342799);color:#f0c78e;box-shadow:inset 0 -1px #cfa66c}
+.atlas-province-label {color:#b5c8d6;font-weight:400;font-size:12px;letter-spacing:1px;text-shadow:0 1px 3px #000,0 0 6px #000}
+.atlas-province-label.selected {color:#ffe0a9}
+.atlas-state-filter button {color:#a4b7c6;background:#0e1c27ed;border-color:#455d6d99;border-radius:2px;font-size:12px}
+.atlas-state-filter button.active {background:#2d2d28ef;border-color:#c7a774;color:#ebd0a4}
+.atlas-state-filter button b {color:#d0e0e9;font-family:var(--pg-number-font)}
+.atlas-core-marker {background:#1fc79a;border:2px solid #8ef8dd;box-shadow:0 0 0 4px #1fc79a22,0 0 12px #1fc79a66}
+.atlas-core-marker.usable {background:#1fc79a;border-color:#95fae2;box-shadow:0 0 0 4px #1fc79a22,0 0 12px #1fc79a66}
+.atlas-core-marker.suspect {background:#f0ad4e;border-color:#ffe2b0;box-shadow:0 0 0 4px #f0ad4e22,0 0 14px #f0ad4e88}
+.atlas-core-marker.error {background:#ee5a52;border-color:#ffb2ad;box-shadow:0 0 0 4px #ee5a5233,0 0 16px #ee5a52aa}
+.atlas-core-marker.missing {background:#6f93ba;border-color:#b5cde2;box-shadow:0 0 0 3px #6f93ba22}
+.atlas-core-marker.selected {outline-color:#e3cc9e}
+.ds-map-controls button {background:#12232de8;border-color:#536975;color:#b9cbd6;box-shadow:none}
+.ds-map-controls button:hover {background:#263c48;border-color:#9ab5c5}
+.atlas-map-credit {color:#7f9aaa;font-size:9px}
+.atlas-map-credit i {background:#74d4fc}
+.atlas-map .maplibregl-ctrl-attrib {background:#0c1721d9!important;border-color:#3a4d5b;color:#849cae}
+.atlas-map .maplibregl-ctrl-attrib a {color:#97b4c9}
+
+/* 趋势、轻量列表和表格。 */
+.ds-bottom .ds-card-head h3 {font-size:14px}
+.ds-trend .ds-trend-line {stroke:var(--pg-primary);filter:none}
+.ds-trend .ds-gridline {stroke:#68819544;opacity:1}
+.ds-trend text {fill:#92aaba;font-size:11px}
+.ds-trend stop {stop-color:var(--pg-primary)}
+.ds-trend circle {stroke:var(--pg-primary);fill:#172b39}
+.ds-trend>text:last-child {fill:#aed9eb!important}
+.ds-hour-bars {height:110px}
+.ds-hour-bars text {fill:#9bb1c1;font-size:11px}
+.ds-hour-bars rect.bar {fill:var(--pg-secondary)}
+.ds-bottom .ds-inline-evidence {height:110px}
+.ds-bottom .ds-inline-evidence .chart {height:110px}
+.ds-bottom-legend i {background:var(--pg-primary)}
+.ds-bottom-legend i.target {background:var(--pg-gold)}
+.ds-alert-item {border-color:#43586866}
+.ds-alert-copy strong,.ds-station-row strong {color:#c1d3e0;font-size:13px}
+.ds-alert-copy small,.ds-station-row small {color:#8aa4b7;font-size:11px}
+.ds-alert-item:hover,.ds-station-row:hover {background:linear-gradient(90deg,#74d4fc0b,transparent)}
+.ds-dot {background:var(--pg-gold)}.ds-dot.red {background:var(--pg-danger);box-shadow:0 0 6px #e7877822}
+.ds-station-row {border-color:#43586855}
+.ds-station-row b {color:#9bd0e6}.ds-station-row b.amber {color:var(--pg-gold)}
+.ds-tag {background:#25433e44;border-color:#4bccc155;color:#8ad8cd;font-size:10px}
+.ds-tag.amber {color:#f1c38b;border-color:#fead5166;background:#6e50272e}
+.ds-tag.red {color:#efb0a3;border-color:#e7877866;background:#7540372e}
+.ds-tag.blue {color:#a3cae6;border-color:#67b8fa66;background:#27456344}
+.ds-inside-table th {background:#233b4d88;border-color:#4c627455;color:#9ab2c5;font-size:11px}
+.ds-inside-table td {color:#b1c6d4;border-color:#3c536455;font-size:11px}
+.ds-inside-table tbody tr:nth-child(odd) {background:#253a491f}
+.ds-record,.ds-report-item,.ds-status-grid button,.ds-filter-stage {background:linear-gradient(120deg,#1c303f66,#13212c66);border-color:#4c627455;color:#a0b7c7;box-shadow:none}
+.ds-record.selected,.ds-report-item.selected,.ds-filter-stage.active {background:linear-gradient(120deg,#5b4e3033,#1b2e3f66);border-color:#b79b6a99;box-shadow:none}
+.ds-record-top strong,.ds-report-item strong,.ds-selected-heading {color:#c8dce7}
+.ds-record p,.ds-record small,.ds-report-item small {color:#98afc0}
+.ds-button {color:#aed3e7;background:#1a3446;border-color:#57788c}
+.ds-button.primary {color:#e5cfac;background:linear-gradient(110deg,#504730,#2e3840);border-color:#a98f65;box-shadow:none}
+.ds-explain {background:#1a344533;border-color:#66879b;color:#9fb7c8}
+.ds-explain.amber {background:#5a492422;border-color:#bc985c;color:#dcc194}
+.ds-matrix .cell {background:#4bccc11f;color:#91d4cc;border-color:#4bccc144}
+.ds-matrix .cell.mid {color:#e6bd82}.ds-matrix .cell.bad {color:#eca99b}
+.ds-matrix .name,.ds-rank .name {color:#aec4d4}
+.ds-matrix .heading {color:#8ba3b6}
+.ds-rank b {color:#a1d4e9}
+.ds-info-list b,.ds-mini-timeline .timeline-item strong {color:#bfcedb}
+.ds-info-list>div,.ds-rule-item {border-color:#4a607255}
+.ds-rule-flow>div,.ds-evidence-metrics>div {background:#1c3041;border-color:#4e687b}
+.ds-evidence-metrics b.cyan {color:#74d4fc}
+
+/* 详情弹层继承同一套材料和颜色。 */
+.ds-map-station,.atlas-map .maplibregl-popup-content,.modal {background:linear-gradient(120deg,#1c3542f7,#0b1a25f7);border-color:#748c9c;box-shadow:0 20px 60px #0009,inset 0 1px #d8e8ef22}
+.ds-map-station strong {color:#dae8ef}.ds-map-station small {color:#a0b8c9}
+.ds-map-station button:not(.ds-pop-close) {color:#a5d6ed}
+.modal .panel,.modal .evidence-kpi {background:#172b39;border-color:#4d6476}
+.modal .panel-head {background:linear-gradient(90deg,#253e4f77,transparent);border-color:#4e647655}
+.modal .panel-title,.modal .page-title h1 {color:#d4e3ec}
+.modal .btn.primary {background:#4a4231;border-color:#ac9165;color:#f0d5ad}
+.modal .form-field input,.modal .form-field select,.modal .form-field textarea {background:#10212e;border-color:#526b7e;color:#d0dfe7}
+.modal .form-field label,.modal .dl span {color:#a1b8ca}
+.modal .table-link,.modal .positive {color:#90cfdc}
+.ds-footer {color:#718c9e;border-color:#3c536344}
+.ds-footer-state {color:#8aa1b0}
+.ds-footer .ds-footer-state i {background:#4bccc1;box-shadow:none}
+.ds-empty-page h2 {color:#b6cbd9}.ds-empty-page p {color:#8aa0b1}
+button:focus-visible,select:focus-visible {outline:2px solid #fead51;outline-offset:3px}
+@media (prefers-reduced-motion:reduce) {.atlas-core-marker.abnormal:before {animation:none}}
+
+/* 左侧品牌 + 右侧六大导航；左上地图、右侧态势、底部分析。 */
+.ds-header {height:88px;grid-template-columns:600px minmax(0,1fr);gap:40px;padding:0 26px;align-items:center;background:linear-gradient(180deg,#192e36ef,#0b1922f2)}
+.ds-header:after {left:26px;right:26px;bottom:0;background:linear-gradient(90deg,#7eb4b5aa,#55839b66 28%,#3c596a44)}
+.ds-brand {justify-content:flex-start;height:87px;gap:13px;background:linear-gradient(105deg,#25465155,transparent);padding-left:3px}
+.ds-brand:before {inset:auto 0 0 0;height:2px;border:0;clip-path:polygon(0 0,95% 0,100% 100%,0 100%);background:linear-gradient(90deg,#8adbd2,#5e8d9a66);box-shadow:0 0 7px #74d4fc22}
+.ds-brand:after {display:none}
+.ds-brand h1 {font-size:29px;letter-spacing:1.5px;white-space:nowrap}
+.ds-brand p {text-align:left;font-size:9px;letter-spacing:3.1px;color:#87a6b7}
+.ds-logo {width:42px;height:47px;flex:none}
+.ds-primary {padding:0;justify-content:flex-end;gap:13px;align-items:center;height:88px}
+.ds-primary button {height:48px;max-width:172px;padding:0 20px;font-size:18px;letter-spacing:1.5px;border-bottom-color:#3e5e6d77;background:linear-gradient(180deg,transparent,#2b47592b)}
+.ds-primary button.active {background:linear-gradient(180deg,#3b665b11,#42685155);color:#b8e8d7;border-color:#80c9b3}
+.ds-primary button.active:before {background:#9ce4cd;box-shadow:0 0 7px #74d4fc44}
+.ds-context {height:47px;padding:0 26px 0 180px}
+.ds-context-left strong {font-size:16px}
+.ds-context-left span {font-size:11px;letter-spacing:.5px}
+.ds-workspace {left:22px;right:22px;top:143px;bottom:37px;grid-template-columns:136px minmax(0,1fr);gap:18px}
+.ds-subnav {padding:12px 9px 10px 0;gap:10px;background:linear-gradient(90deg,#11232b99,#0b182244);border-right:1px solid #41606b66}
+.ds-subnav:after {background:#8dd4c4;height:24px;top:20px}
+.ds-subnav button {width:126px;height:48px;min-height:48px;flex-direction:row;gap:10px;justify-content:flex-start;padding:0 13px;font-size:13px;letter-spacing:.5px;background:linear-gradient(105deg,#243c4666,#11232c55);border-color:#44616c66;border-radius:2px}
+.ds-subnav button .icon {width:18px;height:18px;flex:none}
+.ds-subnav button.active {background:linear-gradient(105deg,#33544a99,#16343c77);border-color:#699b8d99;color:#c4ebda}
+.ds-subnav button.active .icon {color:#a9dfcc}
+.ds-subnav button.active:before {top:13px;height:20px;width:2px;background:#a4e6d1;box-shadow:0 0 6px #74d4fc33}
+.ds-subnav .ds-badge {right:4px;top:4px;font-size:8px;line-height:12px;min-width:12px}
+.ds-subnav-foot {font-size:8px;letter-spacing:1.2px;opacity:.8}
+
+.ds-scene {display:grid;grid-template-columns:minmax(0,1fr) 620px;grid-template-rows:minmax(0,1fr) 288px;gap:16px;background:none;overflow:visible;border-radius:0}
+.ds-scene:after,.ds-scene:before {display:none}
+.ds-map-panel {grid-area:1/1/2/2;position:relative;min-width:0;min-height:0;overflow:hidden;border:1px solid #506b785e;border-top-color:#79aaa780;border-radius:3px;background:#06101a;isolation:isolate;box-shadow:0 10px 32px #0003,inset 0 1px #b4e5db16}
+.ds-map-panel:after {content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:linear-gradient(180deg,#091a26f0,transparent 20%,transparent 76%,#091620ed),linear-gradient(90deg,#08152055,transparent 14%,transparent 88%,#08152055)}
+.atlas-container {inset:0}
+.atlas-border-hud {display:none}
+.ds-map-label {left:22px;top:18px}
+.ds-map-label h2 {font-size:18px;letter-spacing:1px}
+.ds-map-label p {font-size:8px;letter-spacing:1.6px;margin-top:6px}
+.atlas-filter-note {left:22px;top:67px;font-size:11px}
+.ds-map-mode {right:20px;top:22px}
+.ds-map-mode button {padding:7px 11px;font-size:11px}
+.atlas-state-filter {left:20px;bottom:40px;gap:6px}
+.atlas-state-filter button {font-size:11px;padding:7px 10px;min-height:32px}
+.ds-map-controls {right:20px;bottom:40px;gap:6px}
+.atlas-map-credit {left:22px;bottom:15px;font-size:9px}
+.atlas-map .maplibregl-ctrl-bottom-right {right:20px;bottom:12px}
+.atlas-map .maplibregl-ctrl-bottom-left {left:22px;bottom:84px}
+.ds-map-station {left:52%;top:36%;width:275px}
+
+.ds-side-deck {grid-area:1/2/2/3;display:grid;grid-template-rows:108px minmax(0,1fr);gap:14px;min-width:0;min-height:0;z-index:3}
+.ds-kpis {position:static;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;min-width:0}
+.ds-kpi {padding:11px 11px 9px;min-width:0;border-radius:2px;background:linear-gradient(115deg,#203a46f2,#112632f2)}
+.ds-kpi-label {font-size:12px;letter-spacing:0;white-space:nowrap}
+.ds-kpi-label button {margin-left:4px}
+.ds-kpi-value {font-size:30px;line-height:1.42;letter-spacing:.2px}
+.ds-kpi-value em {font-size:10px;margin-left:3px}
+.ds-kpi-note {font-size:9px;letter-spacing:0;white-space:nowrap}
+.ds-side-cards {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:14px;min-width:0;min-height:0}
+.ds-side-cards>.ds-card {height:auto;min-height:0;min-width:0;flex:initial}
+.ds-side-cards>.ds-card:first-child {grid-area:1/1/2/2}
+.ds-side-cards>.ds-card:nth-child(2) {grid-area:1/2/3/3}
+.ds-side-cards>.ds-card:nth-child(3) {grid-area:2/1/3/2}
+.ds-side-cards:has(>.ds-card:last-child:nth-child(2)) {grid-template-rows:minmax(0,1fr)}
+.ds-side-cards:has(>.ds-card:last-child:nth-child(2))>.ds-card:first-child {grid-area:1/1/2/2}
+.ds-side-cards:has(>.ds-card:last-child:nth-child(2))>.ds-card:nth-child(2) {grid-area:1/2/2/3}
+.ds-side-cards[data-page="ledger"]>.ds-card:first-child {grid-area:1/1/3/2}
+.ds-side-cards[data-page="ledger"]>.ds-card:nth-child(2) {grid-area:1/2/2/3}
+.ds-side-cards[data-page="ledger"]>.ds-card:nth-child(3) {grid-area:2/2/3/3}
+.ds-side-cards .ds-card-head {height:43px;padding:0 13px;flex:none}
+.ds-side-cards .ds-card-head h3 {font-size:15px;letter-spacing:.4px;white-space:nowrap}
+.ds-side-cards .ds-card-head .ds-card-extra {font-size:9px;white-space:nowrap}
+.ds-side-cards .ds-card-head .ds-more {font-size:10px}
+.ds-side-cards .ds-card-head:before {top:13px}
+.ds-side-cards .ds-card-body {padding:11px 13px}
+.ds-side-cards .ds-alert-item {padding:14px 0}
+.ds-side-cards .ds-alert-copy strong {font-size:12px;line-height:1.7}
+.ds-side-cards .ds-alert-copy small {font-size:10px}
+.ds-side-cards .ds-station-row {padding:9px 0}
+.ds-side-cards .ds-station-row strong {font-size:12px}
+.ds-side-cards .ds-station-row small {font-size:10px}
+.ds-side-cards .ds-event-top {margin-bottom:9px}
+.ds-side-cards .ds-event-top b {font-size:31px}
+.ds-side-cards .ds-status-grid {gap:6px}
+.ds-side-cards .ds-status-grid button {padding:8px 4px;font-size:10px}
+.ds-side-cards .ds-status-grid button b {font-size:22px}
+.ds-side-cards .ds-info-list {font-size:11px}
+.ds-side-cards .ds-info-list>div {padding:9px 0;gap:7px}
+.ds-side-cards .ds-explain {font-size:11px;line-height:1.7;padding:10px;margin-top:12px}
+.ds-side-cards .ds-evidence-metrics {gap:8px}
+.ds-side-cards .ds-evidence-metrics>div {padding:9px}
+.ds-side-cards .ds-evidence-metrics b {font-size:24px}
+.ds-side-cards .ds-selected-heading {font-size:15px;gap:8px;flex-wrap:wrap}
+.ds-side-cards .ds-rank {gap:8px;padding:11px 0}
+.ds-side-cards .ds-rank b {font-size:13px}
+
+.ds-lower-deck {grid-area:2/1/3/3;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:16px;min-width:0;min-height:0;z-index:3}
+.ds-lower-cards {display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:14px;min-height:0;min-width:0}
+.ds-lower-cards>.ds-card,.ds-lower-trend>.ds-card {height:100%;min-height:0;min-width:0;flex:initial}
+.ds-lower-cards[data-page="summary"] {grid-template-columns:.95fr 1.1fr .95fr;grid-auto-flow:row}
+.ds-lower-cards .ds-card-head {height:43px;flex:none;padding:0 14px}
+.ds-lower-cards .ds-card-head h3 {font-size:15px;letter-spacing:.5px}
+.ds-lower-cards .ds-card-head .ds-card-extra {font-size:9px;white-space:nowrap}
+.ds-lower-cards .ds-card-body {padding:10px 14px}
+.ds-lower-cards .ds-element-row {padding:3px 0;font-size:11px}
+.ds-lower-cards .ds-element-row b {font-size:12px}
+.ds-lower-cards .ds-type-row {font-size:11px;padding:6px 0}
+.ds-lower-cards .ds-type-row>b {font-size:13px}
+.ds-lower-cards .premium-data-head {margin-bottom:13px}
+.ds-lower-cards .premium-network {gap:21px;margin-top:17px}
+.ds-lower-cards .premium-network-legend {gap:12px}
+.ds-lower-cards .premium-network-legend b {font-size:19px}
+.ds-lower-cards .ds-status-grid {margin:5px 0 9px}
+.ds-lower-cards .ds-mini-stats {margin:5px 0 12px}
+.ds-lower-cards .ds-filter-stage {padding:6px 10px;margin-bottom:5px;font-size:11px}
+.ds-lower-cards .ds-filter-stage b {font-size:14px}
+.ds-lower-cards .ds-matrix {gap:3px;font-size:10px;line-height:1.3}
+.ds-lower-cards .ds-matrix .cell,.ds-lower-cards .ds-matrix .name {padding:2px 0;font-size:10px;line-height:1.3}
+.ds-lower-cards .ds-matrix .heading {font-size:9px;padding:1px 0;line-height:1.3}
+.ds-lower-cards .ds-rule-category {padding:7px 4px;font-size:11px}
+.ds-lower-cards[data-page="rules"]>.ds-card:first-child .ds-card-body {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;align-content:start}
+.ds-lower-cards[data-page="rules"]>.ds-card:first-child .ds-filter-row,.ds-lower-cards[data-page="rules"]>.ds-card:first-child .ds-explain {grid-column:1/-1;margin:0}
+.ds-lower-cards[data-page="rules"]>.ds-card:first-child .ds-filter-stage {margin:0;width:auto;padding:7px 9px}
+.ds-lower-cards .ds-explain {font-size:11px;line-height:1.7;margin-top:10px}
+.ds-lower-cards .ds-info-list>div {padding:7px 0;font-size:11px}
+.ds-lower-cards .ds-report-item {padding:9px;margin-bottom:7px}
+.ds-lower-trend {min-height:0;min-width:0}
+.ds-lower-trend .ds-card-head {height:43px;flex:none;padding:0 15px}
+.ds-lower-trend .ds-card-head h3 {font-size:15px;letter-spacing:.4px}
+.ds-lower-trend .ds-card-head .ds-card-extra {font-size:10px}
+.ds-lower-trend .ds-card-body {padding:13px 16px;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.ds-lower-trend .ds-trend {width:100%;height:190px;flex:none}
+.ds-lower-trend .ds-hour-bars {width:100%;height:190px;flex:none}
+.ds-lower-trend .ds-inline-evidence {height:190px}
+.ds-lower-trend .ds-inline-evidence .ds-trend {height:190px}
+.ds-lower-trend .ds-bottom-metrics {grid-template-columns:repeat(2,1fr);gap:16px;margin:9px 0 13px}
+.ds-lower-trend .ds-bottom-metrics b {font-size:26px;margin-top:7px}
+.ds-lower-trend .ds-rule-flow {flex-wrap:wrap;gap:9px}
+.ds-lower-trend .ds-rule-flow>div {padding:14px 7px;font-size:12px;min-width:0;flex:1}
+.ds-empty-page {
+  position: absolute;
+  top: 140px;
+  left: 32px;
+  right: 32px;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(41, 81, 115, 0.4);
+  background: radial-gradient(ellipse at center, rgba(14, 43, 67, 0.6) 0%, rgba(6, 21, 35, 0.85) 100%);
+  border-radius: 4px;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5);
+}
+.ds-empty-page h2 {
+  font-size: 26px;
+  color: #c7ebf7;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.ds-empty-page p {
+  font-size: 14px;
+  color: #6d9fc0;
+  letter-spacing: 1px;
+}
+
+/* 气象装置/站点八面体状态图标周边光环与重点站点全息标记 */
+.atlas-core-marker {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent !important;
+  border: 1px solid rgba(64, 225, 218, 0.45) !important;
+  box-shadow: 0 0 10px rgba(64, 225, 218, 0.3) !important;
+  cursor: pointer;
+  position: absolute;
+  padding: 0;
+  rotate: none !important;
+}
+.atlas-core-marker:before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border: 1px solid rgba(64, 225, 218, 0.35);
+  border-radius: 50% !important;
+  rotate: none !important;
+  animation: atlas-pulse 3s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+}
+.atlas-core-marker:after {
+  display: none !important;
+}
+.atlas-core-marker.abnormal {
+  border-color: rgba(255, 179, 80, 0.6) !important;
+  box-shadow: 0 0 14px rgba(255, 179, 80, 0.4) !important;
+}
+.atlas-core-marker.abnormal:before {
+  border-color: rgba(255, 179, 80, 0.5) !important;
+}
+.atlas-core-marker.offline {
+  border-color: rgba(145, 166, 193, 0.45) !important;
+  box-shadow: 0 0 8px rgba(145, 166, 193, 0.25) !important;
+}
+.atlas-core-marker.offline:before {
+  border-color: rgba(145, 166, 193, 0.35) !important;
+}
+.atlas-core-marker.selected {
+  border-color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.8), 0 0 28px rgba(64, 225, 218, 0.6) !important;
+}

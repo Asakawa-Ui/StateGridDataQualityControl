@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>电力气象监测质控实验验证平台</title>
+
+  <!-- 基础与大屏框架样式 -->
+  <link rel="stylesheet" href="./css/base.css?v=20261104_45" />
+  <!-- 第三方地图组件样式 -->
+  <link rel="stylesheet" href="./vendor/maplibre-gl.css" />
+  <!-- 栅格布局、主题视觉与响应式适配 -->
+  <link rel="stylesheet" href="./css/layout.css?v=20261104_45" />
+  <link rel="stylesheet" href="./css/theme.css?v=20261104_45" />
+  <link rel="stylesheet" href="./css/responsive.css?v=20261104_45" />
+  <!-- 业务模块样式：六模块工作台、质控总览、地图控件与省公司通道 -->
+  <link rel="stylesheet" href="./css/qc-workbench.css?v=20261104_45" />
+  <link rel="stylesheet" href="./css/qc-overview.css?v=20261104_48" />
+  <link rel="stylesheet" href="./css/custom-select.css?v=20261104_45" />
+  <link rel="stylesheet" href="./css/map-controls.css?v=20261104_45" />
+  <link rel="stylesheet" href="./css/province-channel.css?v=20261104_50" />
+</head>
+<body>
+  <div id="app"></div>
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="详情窗口"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- 1. 基础地理路径与核心业务数据/状态机 -->
+  <script src="./data/prov-geo.js?v=20261104_45"></script>
+  <script src="./data/china-divisions.js?v=20261104_45"></script>
+  <script src="./data/qc-database.js?v=20261104_45"></script>
+  <script src="./js/core.js?v=20261104_45"></script>
+  <script src="./js/custom-select.js?v=20261104_45"></script>
+  <script src="./js/screen.js?v=20261104_45"></script>
+
+  <!-- 2. 省域边界、国界掩膜与第三方渲染引擎 -->
+  <script src="./data/province-geojson.js?v=20261104_45"></script>
+  <script src="./data/china-map-extent.js?v=20261104_45"></script>
+  <script src="./vendor/maplibre-gl.js"></script>
+  <script src="./vendor/echarts.min.js"></script>
+
+  <!-- 3. 地图视图、精修组件、无障碍增强与全息图层 -->
+  <script src="./js/atlas.js?v=20261104_45"></script>
+  <script src="./js/refined-ui.js?v=20261104_45"></script>
+  <script src="./js/a11y.js?v=20261104_45"></script>
+  <script src="./js/holographic.js?v=20261104_45"></script>
+
+  <!-- 4. 质控参考标准与六大业务模块实现 -->
+  <script src="./data/qc-reference.js?v=20261104_45"></script>
+  <script src="./js/qc-province.js?v=20261104_45"></script>
+  <script src="./js/qc-channel.js?v=20261104_45"></script>
+  <script src="./js/qc-core.js?v=20261104_49"></script>
+  <script src="./js/qc-overview.js?v=20261104_48"></script>
+  <script src="./js/dashboard-charts.js?v=20261104_45"></script>
+</body>
+</html>
